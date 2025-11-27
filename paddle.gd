@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var collision_shape: CollisionShape2D = $Area2D/CollisionShape2D
+@onready var sprite: Sprite2D = $Sprite2D
 @export var speed := 400
 @export var padding_limit := 20
 var left_limit : float
@@ -8,8 +9,8 @@ var right_limit : float
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	left_limit = 0 + padding_limit
-	right_limit = get_viewport_rect().size.x - (collision_shape.position.x * 2) - padding_limit
+	left_limit = 0 + sprite.get_rect().size.x / 2 + padding_limit
+	right_limit = get_viewport_rect().size.x - sprite.get_rect().size.x / 2 - padding_limit
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
