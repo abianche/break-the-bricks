@@ -22,16 +22,16 @@ position = Vector2(265, 868)
 
 [node name="Walls" type="Node" parent="."]
 
-[node name="Wall" parent="Walls" instance=ExtResource("3_feb5d")]
+[node name="TopWall" parent="Walls" instance=ExtResource("3_feb5d")]
 position = Vector2(322, 0)
 scale = Vector2(33.19999, 1)
 
-[node name="Wall2" parent="Walls" instance=ExtResource("3_feb5d")]
+[node name="LeftWall" parent="Walls" instance=ExtResource("3_feb5d")]
 position = Vector2(-2, 585)
 rotation = 1.5707964
 scale = Vector2(58.519993, 1)
 
-[node name="Wall3" parent="Walls" instance=ExtResource("3_feb5d")]
+[node name="RightWall" parent="Walls" instance=ExtResource("3_feb5d")]
 position = Vector2(644, 591.99994)
 rotation = 1.5707964
 scale = Vector2(58.519993, 1)

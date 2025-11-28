@@ -1,6 +1,6 @@
 extends Area2D
 
-var velocity := Vector2(0.0, 400.0)
+var velocity := Vector2(0.0, 600.0)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,10 +13,29 @@ func _process(delta: float) -> void:
 
 
 func _on_area_entered(area: Area2D) -> void:
-	var root = area.get_parent()
-	if root.name == "Paddle":
+	var paddle = area.get_parent()
+	if paddle.name == "Paddle":
+		# Flip vertical velocity
 		velocity.y *= -1
+
+		# 1. Get the horizontal offset of the ball from the paddle center
+		var offset = (global_position.x - paddle.global_position.x)
+
+		# 2. Normalize it to [-1, 1]
+		# Assuming your paddle sprite is centered and width is paddle_width
+		var half_width = paddle.get_node("Sprite2D").get_rect().size.x / 2.0
+		var normalized = clamp(offset / half_width, -1.0, 1.0)
+
+		# 3. Apply to X velocity (adjust strength)
+		var bounce_strength = 200.0
+		velocity.x = normalized * bounce_strength
 
 
 func _on_body_entered(body: Node2D) -> void:
-	velocity.y *= -1
+	match body.name:
+		"LeftWall":
+			velocity.x = abs(velocity.x)
+		"RightWall":
+			velocity.x = -abs(velocity.x)
+		"TopWall":
+			velocity.y = abs(velocity.y)
