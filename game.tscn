@@ -1,8 +1,39 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwmf2dw3bdfay"]
+[gd_scene load_steps=4 format=3 uid="uid://bwmf2dw3bdfay"]
 
-[ext_resource type="PackedScene" uid="uid://b7fluxn4p80k4" path="res://paddle.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://tfsi4olewqxm" path="res://paddle.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://milombr412bq" path="res://ball.tscn" id="2_feb5d"]
+[ext_resource type="PackedScene" uid="uid://b5s0aj0upjtg5" path="res://wall.tscn" id="3_feb5d"]
 
 [node name="Game" type="Node"]
 
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.60784316, 0.7372549, 0.05882353, 1)
+
 [node name="Paddle" parent="." instance=ExtResource("1_80nbo")]
 position = Vector2(266, 1077)
+
+[node name="Ball" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(265, 868)
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="Wall" parent="Walls" instance=ExtResource("3_feb5d")]
+position = Vector2(322, 0)
+scale = Vector2(33.19999, 1)
+
+[node name="Wall2" parent="Walls" instance=ExtResource("3_feb5d")]
+position = Vector2(-2, 585)
+rotation = 1.5707964
+scale = Vector2(58.519993, 1)
+
+[node name="Wall3" parent="Walls" instance=ExtResource("3_feb5d")]
+position = Vector2(644, 591.99994)
+rotation = 1.5707964
+scale = Vector2(58.519993, 1)
+
+[connection signal="area_entered" from="Ball" to="Paddle" method="_on_ball_area_entered"]
