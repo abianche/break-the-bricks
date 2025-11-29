@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwmf2dw3bdfay"]
+[gd_scene load_steps=5 format=3 uid="uid://bwmf2dw3bdfay"]
 
 [ext_resource type="PackedScene" uid="uid://tfsi4olewqxm" path="res://paddle.tscn" id="1_80nbo"]
 [ext_resource type="PackedScene" uid="uid://milombr412bq" path="res://ball.tscn" id="2_feb5d"]
 [ext_resource type="PackedScene" uid="uid://b5s0aj0upjtg5" path="res://wall.tscn" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://c1vwreamvy50d" path="res://killzone.tscn" id="4_fc0e3"]
 
 [node name="Game" type="Node"]
 
@@ -23,17 +24,22 @@ position = Vector2(265, 868)
 [node name="Walls" type="Node" parent="."]
 
 [node name="TopWall" parent="Walls" instance=ExtResource("3_feb5d")]
-position = Vector2(322, 0)
+position = Vector2(325, -7)
 scale = Vector2(33.19999, 1)
 
 [node name="LeftWall" parent="Walls" instance=ExtResource("3_feb5d")]
-position = Vector2(-2, 585)
+position = Vector2(-7, 584.99994)
 rotation = 1.5707964
 scale = Vector2(58.519993, 1)
 
 [node name="RightWall" parent="Walls" instance=ExtResource("3_feb5d")]
-position = Vector2(644, 591.99994)
+position = Vector2(655, 586.99994)
 rotation = 1.5707964
 scale = Vector2(58.519993, 1)
 
+[node name="Killzone" parent="." instance=ExtResource("4_fc0e3")]
+position = Vector2(325, 1152)
+scale = Vector2(4.1621966, 3.356619)
+
 [connection signal="area_entered" from="Ball" to="Paddle" method="_on_ball_area_entered"]
+[connection signal="area_entered" from="Killzone" to="Ball" method="_on_killzone_area_entered"]

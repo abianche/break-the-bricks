@@ -39,3 +39,8 @@ func _on_body_entered(body: Node2D) -> void:
 			velocity.x = -abs(velocity.x)
 		"TopWall":
 			velocity.y = abs(velocity.y)
+
+
+func _on_killzone_area_entered(area: Area2D) -> void:
+	if area.name == "Ball":
+		queue_free()
