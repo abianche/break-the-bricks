@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ihawovhxwfgh" path="res://sprites/brick.png" id="1_awxk8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5p85m"]
-size = Vector2(36, 10)
+size = Vector2(34, 8)
 
 [node name="Brick" type="Area2D" groups=["bricks"]]
 
