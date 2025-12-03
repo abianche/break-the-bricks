@@ -17,6 +17,11 @@ func _ready() -> void:
 
 	target_x = position.x
 	prev_mouse_x = get_global_mouse_position().x
+	
+	var tex: Texture2D = load("res://sprites/cursor.png")
+	# hotspot = where the “click point” is inside the image
+	var hotspot := Vector2(0, 0) 
+	Input.set_custom_mouse_cursor(tex, Input.CURSOR_ARROW, hotspot)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
