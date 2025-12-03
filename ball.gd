@@ -19,22 +19,26 @@ func reset_ball():
 	
 
 func _on_area_entered(area: Area2D) -> void:
-	var paddle = area.get_parent()
-	if paddle.name == "Paddle":
+	var parent = area.get_parent()
+
+	if parent.name == "Paddle":
 		# Flip vertical velocity
 		velocity.y *= -1
 
 		# 1. Get the horizontal offset of the ball from the paddle center
-		var offset = (global_position.x - paddle.global_position.x)
+		var offset = (global_position.x - parent.global_position.x)
 
 		# 2. Normalize it to [-1, 1]
 		# Assuming your paddle sprite is centered and width is paddle_width
-		var half_width = paddle.get_node("Sprite2D").get_rect().size.x / 2.0
+		var half_width = parent.get_node("Sprite2D").get_rect().size.x / 2.0
 		var normalized = clamp(offset / half_width, -1.0, 1.0)
 
 		# 3. Apply to X velocity (adjust strength)
 		var bounce_strength = 200.0
 		velocity.x = normalized * bounce_strength
+		
+	elif area.is_in_group("bricks"):
+		area.queue_free()
 
 
 func _on_body_entered(body: Node2D) -> void:
