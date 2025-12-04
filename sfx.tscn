@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwobfw30d7nah"]
+
+[ext_resource type="Script" uid="uid://d2bog4rw25tw3" path="res://sfx.gd" id="1_hlobe"]
+[ext_resource type="AudioStream" uid="uid://bmoqeph8ejj43" path="res://blipSelect.wav" id="2_a0u1m"]
+
+[node name="SFX" type="Node"]
+script = ExtResource("1_hlobe")
+
+[node name="BrickPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_a0u1m")
+volume_db = -13.117

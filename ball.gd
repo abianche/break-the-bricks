@@ -50,6 +50,8 @@ func _on_area_entered(area: Area2D) -> void:
 		else:
 			# after flip: moving down → we must have hit from below
 			global_position.y = area.global_position.y + half_brick_h + ball_r + epsilon
+			
+		SFX.play_brick()	
 		area.queue_free()
 
 

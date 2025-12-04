@@ -423,130 +423,130 @@ position = Vector2(53, 683)
 position = Vector2(53, 667)
 
 [node name="Brick127" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(270, 649)
+position = Vector2(271, 649)
 
 [node name="Brick128" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(270, 632)
+position = Vector2(271, 632)
 
 [node name="Brick129" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(270, 616)
+position = Vector2(271, 616)
 
 [node name="Brick130" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(313, 649)
+position = Vector2(314, 649)
 
 [node name="Brick131" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(313, 632)
+position = Vector2(314, 632)
 
 [node name="Brick132" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(313, 616)
+position = Vector2(314, 616)
 
 [node name="Brick133" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(356, 649)
+position = Vector2(357, 649)
 
 [node name="Brick134" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(356, 632)
+position = Vector2(357, 632)
 
 [node name="Brick135" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(356, 616)
+position = Vector2(357, 616)
 
 [node name="Brick136" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(227, 649)
+position = Vector2(228, 649)
 
 [node name="Brick137" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(227, 632)
+position = Vector2(228, 632)
 
 [node name="Brick138" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(227, 616)
+position = Vector2(228, 616)
 
 [node name="Brick139" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(441, 649)
+position = Vector2(442, 649)
 
 [node name="Brick140" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(441, 632)
+position = Vector2(442, 632)
 
 [node name="Brick141" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(441, 616)
+position = Vector2(442, 616)
 
 [node name="Brick142" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(484, 649)
+position = Vector2(485, 649)
 
 [node name="Brick143" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(484, 632)
+position = Vector2(485, 632)
 
 [node name="Brick144" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(484, 616)
+position = Vector2(485, 616)
 
 [node name="Brick145" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(527, 649)
+position = Vector2(528, 649)
 
 [node name="Brick146" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(527, 632)
+position = Vector2(528, 632)
 
 [node name="Brick147" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(527, 616)
+position = Vector2(528, 616)
 
 [node name="Brick148" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(569, 649)
+position = Vector2(570, 649)
 
 [node name="Brick149" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(569, 632)
+position = Vector2(570, 632)
 
 [node name="Brick150" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(569, 616)
+position = Vector2(570, 616)
 
 [node name="Brick151" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(610, 649)
+position = Vector2(611, 649)
 
 [node name="Brick152" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(610, 632)
+position = Vector2(611, 632)
 
 [node name="Brick153" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(610, 616)
+position = Vector2(611, 616)
 
 [node name="Brick154" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(398, 649)
+position = Vector2(399, 649)
 
 [node name="Brick155" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(398, 632)
+position = Vector2(399, 632)
 
 [node name="Brick156" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(398, 616)
+position = Vector2(399, 616)
 
 [node name="Brick157" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(97, 649)
+position = Vector2(98, 649)
 
 [node name="Brick158" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(97, 632)
+position = Vector2(98, 632)
 
 [node name="Brick159" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(97, 616)
+position = Vector2(98, 616)
 
 [node name="Brick160" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(140, 649)
+position = Vector2(141, 649)
 
 [node name="Brick161" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(140, 632)
+position = Vector2(141, 632)
 
 [node name="Brick162" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(140, 616)
+position = Vector2(141, 616)
 
 [node name="Brick163" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(183, 649)
+position = Vector2(184, 649)
 
 [node name="Brick164" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(183, 632)
+position = Vector2(184, 632)
 
 [node name="Brick165" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(183, 616)
+position = Vector2(184, 616)
 
 [node name="Brick166" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(54, 649)
+position = Vector2(55, 649)
 
 [node name="Brick167" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(54, 632)
+position = Vector2(55, 632)
 
 [node name="Brick168" parent="Bricks" instance=ExtResource("5_7jktm")]
-position = Vector2(54, 616)
+position = Vector2(55, 616)
 
 [connection signal="area_entered" from="Ball" to="Paddle" method="_on_ball_area_entered"]
 [connection signal="area_entered" from="Killzone" to="Ball" method="_on_killzone_area_entered"]
