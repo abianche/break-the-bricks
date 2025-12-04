@@ -38,7 +38,18 @@ func _on_area_entered(area: Area2D) -> void:
 		velocity.x = normalized * bounce_strength
 		
 	elif area.is_in_group("bricks"):
+		var hit_from_above := velocity.y > 0
+		var half_brick_h = 8.0 / 2.0
+		var ball_r = 8.0
+		var epsilon := 0.1
+		
 		velocity.y *= -1
+		if velocity.y < 0: 
+			# after flip: moving up → we must have hit from above
+			global_position.y = area.global_position.y - half_brick_h - ball_r - epsilon
+		else:
+			# after flip: moving down → we must have hit from below
+			global_position.y = area.global_position.y + half_brick_h + ball_r + epsilon
 		area.queue_free()
 
 
